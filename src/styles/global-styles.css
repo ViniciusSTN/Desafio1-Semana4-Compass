@@ -27,11 +27,12 @@ header {
   margin-inline: auto;
 }
 
-.logo {
+.logo a {
   font-size: 29px;
   display: flex;
   align-items: center;
   font-weight: bold;
+  height: 100%;
 }
 
 .navbar ul {

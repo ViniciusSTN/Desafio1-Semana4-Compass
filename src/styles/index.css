@@ -4,15 +4,14 @@
 .principal-section {
   display: flex;
   margin-inline: auto;
-  /* border: 1px solid red; */
-  max-width: 1145px;
+  max-width: 1146px;
   margin-top: 117px;
   height: 600px;
   position: relative;
+  /* border: 1px solid red; */
 }
 
 .principal-text-wrap{
-  /* border: 1px solid red; */
   max-width: 460px;
 }
 
@@ -78,5 +77,61 @@ h1 {
   position: absolute;
   right: 8%;
   top: 2%;
+}
+
+/* Trending Games Section */
+.trending-games-section {
+  margin-inline: auto;
+  max-width: 1146px;
+  margin-top: 132px;
+}
+
+.trending-games-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.trending-games-wrap h3 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 31px;
+}
+
+.trending-games-wrap span a {
+  background-color: rgba(255, 255, 255, 0.11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 139px;
+  height: 57px;
+  border-radius: 10px;
+}
+
+/* DUVIDA: como distribuir o espaço restante entre os itens (semelhante ao justify-content: space-between)*/
+.game-list {
+  /* border: 1px solid red; */
+  list-style: none;
+  margin-top: 58px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 251px);
+  /* grid-column-gap: 45px; */
+
+}
+
+.game-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  /* width: 251px; */
+}
+
+.game-list li p {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 22px;
 }
 
