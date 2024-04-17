@@ -109,15 +109,14 @@ h1 {
   border-radius: 10px;
 }
 
-/* DUVIDA: como distribuir o espaço restante entre os itens (semelhante ao justify-content: space-between)*/
 .game-list {
-  /* border: 1px solid red; */
   list-style: none;
   margin-top: 58px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 251px);
-  /* grid-column-gap: 45px; */
-
+  justify-content: space-between;
+  grid-row-gap: 70px;
+  grid-column-gap: 20px;
 }
 
 .game-list li {
@@ -125,7 +124,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  /* width: 251px; */
 }
 
 .game-list li p {
@@ -189,3 +187,71 @@ h1 {
   z-index: -1;
 }
 
+/* Secondary section (black) */
+.secondary-section-bg {
+  margin-top: 157px;
+  margin-inline: auto;
+  max-width: 1440px;
+  background-image: url(../public/images/bg-black.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  background-color: #000000dc;
+}
+
+.secondary-section {
+  padding-top: 93px;
+  padding-bottom: 91px;
+}
+
+.secondary-section h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  max-width: 770px;
+  margin-inline: auto;
+  text-align: center;
+  line-height: 187%;
+}
+
+.secondary-section h2 + p {
+  font-size: 16px;
+  max-width: 770px;
+  margin-inline: auto;
+  text-align: center;
+  line-height: 187%;
+  margin-top: 25px;
+}
+
+.secondary-section ul {
+  list-style: none;
+  max-width: 1045px;
+  margin-top: 99px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-row-gap: 62px;
+  justify-content: space-between;
+}
+
+/* Problema: centralizar os dois elementos da segunda linha */
+.secondary-section ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 250px;
+}
+
+.circle-wrap {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
