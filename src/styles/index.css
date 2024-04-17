@@ -1,2 +1,82 @@
 @import 'global-styles.css';
 
+/* Principal section */
+.principal-section {
+  display: flex;
+  margin-inline: auto;
+  /* border: 1px solid red; */
+  max-width: 1145px;
+  margin-top: 117px;
+  height: 600px;
+  position: relative;
+}
+
+.principal-text-wrap{
+  /* border: 1px solid red; */
+  max-width: 460px;
+}
+
+.principal-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.proved {
+  color: #E87D0E;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.introduction-text {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.more-details-buttom a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 195px;
+  height: 53px;
+  background: linear-gradient(to right, #FA8305, #FB9E3C);
+  border-radius: 40px;
+  font-size: 16px;
+  margin-top: 55px;
+}
+
+/* imagens */
+.joystick-wrap {
+  position: absolute;
+  right: 100px;
+  top: -210px;
+  margin-left: 75px;
+  z-index: -1;
+  /* border: 1px solid red; */
+}
+
+.unity-wrap {
+  position: absolute;
+  left: 40%;
+  top: 35%;
+}
+
+.cry-wrap {
+  position: absolute;
+  right: 33%;
+}
+
+.unreal-wrap {
+  position: absolute;
+  right: 8%;
+  top: 2%;
+}
+
