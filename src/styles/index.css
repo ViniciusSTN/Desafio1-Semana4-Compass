@@ -225,7 +225,8 @@ h1 {
   margin-top: 25px;
 }
 
-.secondary-section ul {
+/* Problema: centralizar os dois elementos da segunda linha */
+/* .secondary-section ul {
   list-style: none;
   max-width: 1045px;
   margin-top: 99px;
@@ -234,16 +235,27 @@ h1 {
   grid-template-columns: repeat(auto-fill, 250px);
   grid-row-gap: 62px;
   justify-content: space-between;
+} */
+
+/* Solução: usar display flex com justify-content: center; */
+.secondary-section ul {
+  list-style: none;
+  max-width: 1045px;
+  margin-top: 99px;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 62px;
+  justify-content: center;
 }
 
-/* Problema: centralizar os dois elementos da segunda linha */
 .secondary-section ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  width: 250px;
+  width: 260px;
 }
 
 .circle-wrap {
