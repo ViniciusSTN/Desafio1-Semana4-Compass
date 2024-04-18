@@ -54,7 +54,7 @@ header {
   border-radius: 6px;
 }
 
-/* DUVIDA: Deixa borda interna - está somando com o tamanho do elemento */
+/* DUVIDA: Deixar borda interna - está somando com o tamanho do elemento */
 .active {
   border-bottom: 4px solid #DC7000;
 }
