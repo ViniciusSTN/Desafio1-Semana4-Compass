@@ -101,6 +101,8 @@ h1 {
 
 .trending-games-wrap span a {
   background-color: rgba(255, 255, 255, 0.11);
+  font-size: 20px;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -266,4 +268,57 @@ h1 {
   width: 65px;
   height: 65px;
   border-radius: 50%;
+}
+
+/* Recent projects section */
+.recent-projects-section {
+  max-width: 1170px;
+  margin-top: 141px;
+  margin-inline: auto;
+}
+
+.recent-projects-text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.recent-projects-text-wrap h2 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.recent-projects-text-wrap p {
+  font-size: 14px;
+  line-height: 187%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.project-list {
+  list-style: none;
+  margin-top: 71px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px;
+}
+
+.see-all-wrap {
+  margin-top: 72px;
+  display: flex;
+  justify-content: center;
+}
+
+.see-all-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 139px;
+  height: 57px;
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 400;
 }
