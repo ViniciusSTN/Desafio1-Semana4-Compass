@@ -114,11 +114,15 @@ h1 {
 .game-list {
   list-style: none;
   margin-top: 58px;
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fill, 251px);
   justify-content: space-between;
   grid-row-gap: 70px;
-  grid-column-gap: 20px;
+  grid-column-gap: 20px; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .game-list li {
