@@ -122,3 +122,121 @@ body {
   font-size: 20px;
 }
 
+/* Say hello form section */
+.say-hello-form-section {
+  max-width: 1440px;
+  margin-inline: auto;
+  margin-top: 147px;
+  padding-top: 64px;
+  padding-bottom: 63px;
+  background-color: #1C140F;
+  position: relative;
+}
+
+.say-hello-form-section::before {
+  content: '';
+  background-image: url(../public/images/line-before.svg);
+  background-repeat: no-repeat;
+  background-size: contain; /* Imagem se ajustar dentro do container */
+  width: 73vw;
+  max-width: 1048px;
+  height: 19vw;
+  max-height: 270px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.say-hello-form-section::after {
+  content: '';
+  background-image: url(../public/images/line-after.svg);
+  background-repeat: no-repeat;
+  background-size: contain; /* Imagem se ajustar dentro do container */
+  width: 40vw;
+  max-width: 570px;
+  height: 18vw;
+  max-height: 255px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.say-hello-form-wrap {
+  max-width: 671px;
+  margin-inline: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.say-hello-form-wrap h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.say-hello-form-wrap p {
+  font-size: 13px;
+  text-align: center;
+  line-height: 189%;
+}
+
+.say-hello-form-wrap form { /* formulário */
+  margin-top: 79px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.say-hello-form-wrap label {
+  display: flex;
+  flex-direction: column;
+}
+
+.say-hello-form-wrap form span {
+  color: #4F4F4F;
+  font-size: 14px;
+}
+
+.say-hello-form-wrap input, .say-hello-form-wrap textarea {
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid #CECECE;
+  border-radius: 9px;
+  margin-top: 6px;
+  color: #fff;
+  font-size: 18px;
+  padding: 0 20px;
+}
+
+.say-hello-form-wrap textarea {
+  height: 232px;
+  resize: none;
+  width: 100%;
+  padding: 20px;
+}
+
+.say-hello-form-wrap input[type='text'] {
+  height: 56px;
+}
+
+.form-name-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-name-label, .last-name-label {
+  width: 48%;
+}
+
+.say-hello-form-wrap button[type='submit'] {
+  height: 57px;
+  width: 193px;
+  cursor: pointer;
+  background-color: #DC7000;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-top: 31px;
+  margin-left: auto;
+}
+
