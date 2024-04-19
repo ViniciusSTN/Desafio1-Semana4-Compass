@@ -1,12 +1,124 @@
 @import 'global-styles.css';
 
+body {
+  background: linear-gradient(170deg, #2719C0, #383837);
+}
+
 .principal-section {
   max-width: 1188px;
   margin-top: 100px;
   margin-inline: auto;
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principal-title-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.principal-title-wrap h1 {
+  color: #fff;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 180%;
+  text-align: center;
+}
+
+.principal-title-wrap h2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 187%;
+  text-align: center;
 }
 
 .active-page {
   color: #E47500;
 }
+
+.world-map-image-wrap {
+  margin-top: 93px;
+  max-width: 1060px;
+}
+
+.world-map-image-wrap img {
+  max-width: 100%;
+}
+
+.ways-contact-us-wrap {
+  width: 100%;
+  margin-top: 62px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* campo 1 do ways-contact-us-wrap */
+.social-midia-wrap {
+  max-width: 184px;
+  margin-top: 18px;
+  display: flex;
+  gap: 16px;
+}
+
+.social-midia-wrap a {
+  display: flex;
+  background-color: #1C140F;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* campo 2 do ways-contact-us-wrap */
+.phone-number-wrap {
+  width: 439px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+.phone-number-wrap::after {
+  content: '';
+  height: 102px;
+  border: 1px solid #fff;
+  position: absolute;
+  right: 0;
+}
+
+.phone-number-wrap::before {
+  content: '';
+  height: 102px;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 0;
+}
+
+.phone-number-wrap span {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* campo 3 do ways-contact-us-wraps */
+.localization-wrap {
+  display: flex;
+  gap: 19px;
+  justify-content: center;
+  align-items: center;
+}
+
+.localization-wrap span {
+  max-width: 280px;
+  color: #fff;
+  font-size: 20px;
+}
+
