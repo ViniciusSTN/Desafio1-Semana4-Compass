@@ -1,1 +1,46 @@
 @import 'global-styles.css';
+
+body {
+  background: #39289F;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.not-found-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+
+.not-found-container div p {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.not-found-container div::before {
+  content: '';
+  border: 1px solid #fff;
+  height: 45px;
+  position: absolute;
+  left: 75px;
+}
+
+.return-home-wrap {
+  margin-top: 40px;
+}
+
+.return-home-wrap a {
+  color: #FA8305;
+  font-size: 16px;
+}
+
+h1 {
+  color: #fff;
+}
