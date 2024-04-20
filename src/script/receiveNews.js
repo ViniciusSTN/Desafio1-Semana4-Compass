@@ -77,7 +77,7 @@ function sendToastMessage(message, info) {
 
   toast.classList.add('confirmation-message-toast-active');
 
-  setInterval(() => {
+  setTimeout(() => {
     toast.classList.remove('confirmation-message-toast-active');
   }, 3000);
 }

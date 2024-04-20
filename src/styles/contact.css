@@ -240,3 +240,6 @@ body {
   margin-left: auto;
 }
 
+.get-in-message-error {
+  color: red;
+}
