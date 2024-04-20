@@ -4,6 +4,12 @@ body {
   background: linear-gradient(to bottom, #39289F, #402D9D);
 }
 
+main {
+  max-width: 1440px;
+  margin-inline: auto;
+  position: relative;
+}
+
 /* Principal section */
 .principal-section {
   display: flex;
@@ -11,7 +17,6 @@ body {
   max-width: 1146px;
   margin-top: 117px;
   height: 600px;
-  position: relative;
 }
 
 .principal-text-wrap{
@@ -61,27 +66,33 @@ h1 {
 /* imagens */
 .joystick-wrap {
   position: absolute;
-  right: 100px;
-  top: -210px;
+  right: 22px;
+  top: -207px;
   margin-left: 75px;
   z-index: -1;
 }
 
+.joystick-wrap img {
+  width: 46vw;
+  height: auto;
+  max-width: 668px;
+}
+
 .unity-wrap {
   position: absolute;
-  left: 40%;
-  top: 35%;
+  left: 42%;
+  top: 200px;
 }
 
 .cry-wrap {
   position: absolute;
-  right: 33%;
+  right: 36%;
 }
 
 .unreal-wrap {
   position: absolute;
-  right: 8%;
-  top: 2%;
+  right: 16%;
+  top: 20px;
 }
 
 /* Trending Games Section */
