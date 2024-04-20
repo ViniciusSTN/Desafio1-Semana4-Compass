@@ -124,10 +124,14 @@ header {
   width: 385px;
   height: 48px;
   border-radius: 8px;
-  padding: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  position: relative;
 }
 
 .form-email-wrap form {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -137,12 +141,12 @@ header {
   /* width: 265px; */
   width: 70%;
   padding-left: 5%;
-  font-size: 13px;
-  border: none;
+  font-size: 16px;
 }
 
 .form-email-wrap input::placeholder {
   color: #898989;
+  font-size: 13px;
 }
 
 .form-email-wrap input:focus {
@@ -252,4 +256,51 @@ footer section {
 
 .copyright-wrap p {
   font-size: 13px;
+}
+
+/* Confirmation message */
+.confirmation-message-toast {
+  display: flex;
+  position: fixed;
+  top: 100px;
+  right: -470px;
+  justify-content: start;
+  padding: 0 25px;
+  gap: 10px;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  /* background-color: #1c8217; */
+  border-radius: 8px;
+  box-shadow: 1px 2px 10px 5px #00000031;
+  z-index: 2;
+  transition: transform 0.5s ease-in-out;
+}
+
+.confirmation-message-image {
+  width: 30px;
+  height: 30px;
+}
+
+.confirmation-message-toast p {
+  font-size: 20px;
+}
+
+.confirmation-message-toast-active {
+  transform: translateX(-480px);
+}
+
+.inputError {
+  border: 2px solid red;
+}
+
+.inputError input {
+  color: red;
+}
+
+.error-message {
+  position: absolute;
+  color: red;
+  top: 40px;
+  left: 0;
 }
