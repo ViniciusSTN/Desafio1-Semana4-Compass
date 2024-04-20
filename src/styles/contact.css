@@ -84,7 +84,6 @@ body {
   align-items: center;
   gap: 25px;
   position: relative;
-  /* border: 1px solid red; */
 }
 
 .phone-number-wrap::after {
@@ -240,6 +239,10 @@ body {
   margin-left: auto;
 }
 
+.say-hello-form-wrap button[type='submit']:hover {
+  background-color: #ff8400;
+}
+
 .get-in-message-error {
-  color: red;
+  color: #ff3333;
 }
