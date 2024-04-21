@@ -23,11 +23,15 @@ ul {
 
 /* Header */
 header {
-  display: flex;
   margin-top: 44px;
-  max-width: 1321px;
+  padding: 0 40px;
+}
+
+.header-content {
+  display: flex;
   justify-content: space-between;
   margin-inline: auto;
+  max-width: 1322px;
 }
 
 .logo a {
@@ -50,7 +54,6 @@ header {
   display: flex;
   align-items: center;
   font-size: 16px;
-  /* height: 41px; */
   padding: 11px 44px;
 }
 
@@ -59,7 +62,6 @@ header {
 }
 
 .navbar .contact-buttom a {
-  display: inline-block;
   background-color: #FA9021;
   border-radius: 6px;
 }
@@ -75,6 +77,89 @@ header {
   background-color: #DC7000;
   position: absolute;
   bottom: 0;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  opacity: 0.4;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: none;
+}
+
+.menu-button {
+  background-color: transparent;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.navbar-active {
+  transform: translateX(-400px);
+}
+
+@media (max-width: 979px) {
+  .navbar ul li {
+    position: static;
+    width: 90%;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    background-color: #fff;
+    height: 100vh;
+    width: 300px;
+    min-width: 200px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .active::after {
+    display: none;
+  }
+
+  .navbar ul li a {
+    color: #000;
+    width: 100%;
+    justify-content: center;
+    height: 7vh;
+  }
+
+  .navbar .contact-buttom a {
+    color: #fff;
+  }
+}
+
+@media (max-width: 666px) {
+  .navbar ul {
+    width: 250px;
+  }
+}
+
+/* content wrap */
+.content-wrap {
+  padding: 0 40px;
+}
+
+@media (max-width: 374px) {
+  .content-wrap {
+    padding: 0 20px;
+  }
 }
 
 /* Stay in the loop section */
@@ -102,7 +187,6 @@ header {
 .stay-in-the-loop-wrap {
   background-color: #1C140F;
   border-radius: 15px;
-  height: 189px;
   padding: 50px;
   margin-top: 74px;
   display: flex;
@@ -169,6 +253,49 @@ header {
   background: #ff8400;
 }
 
+@media (max-width: 1023px) {
+  .stay-in-the-loop-wrap {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .stay-in-the-loop-wrap h3, .stay-in-the-loop-wrap p {
+    text-align: center;
+  }
+
+  .form-email-wrap {
+    max-width: 100%;
+    height: 48px;
+  }
+}
+
+@media (max-width: 374px) {
+  .stay-in-the-loop-wrap {
+    margin-top: 40px;
+  }
+
+  .form-email-wrap {
+    height: auto;
+    padding: 10px;
+  }
+
+  .form-email-wrap form {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .form-email-wrap input {
+    border: 1px solid #a1a1a1;
+    width: 100%;
+  }
+
+  .form-email-wrap button {
+    padding: 10px;
+  }
+}
+
 /* Footer */
 footer {
   margin-top: 163px;
@@ -177,8 +304,9 @@ footer {
 }
 
 footer section {
-  max-width: 1219px;
+  max-width: 1259px;
   margin-inline: auto;
+  padding-inline: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -265,6 +393,42 @@ footer section {
   font-size: 13px;
 }
 
+@media (max-width: 1023px) {
+  .social-midia-list {
+    flex-direction: column;
+  }
+
+  .footer-logo-wrap, .footer-about-us-wrap, .contact-us-wrap, .social-midia-list {
+    justify-content: start;
+    gap: 20px;
+  }
+
+  footer section p {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 666px) {
+  footer section {
+    padding-inline: 20px;
+  }
+
+  .footer-logo-wrap {
+    display: none;
+  }
+}
+
+
+@media (max-width: 374px) {
+  footer section p {
+    max-width: 120px;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
+}
+
 /* Confirmation message */
 .confirmation-message-toast {
   display: flex;
@@ -309,4 +473,18 @@ footer section {
   color: #ff3333;
   top: 40px;
   left: 0;
+}
+
+@media (max-width: 666px) {
+  .confirmation-message-toast {
+    width: 340px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 374px) {
+  .confirmation-message-toast {
+    width: 280px;
+    padding: 0 5px;
+  }
 }

@@ -8,30 +8,38 @@
 </head>
 <body>
 
-  <header>
-    <h2 class="logo">
-      <a href="./index.html">LOGO</a>
-    </h2>
+  <div class="overlay" id="overlay"></div>
 
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a href="./index.html">Home</a>
-        </li>
-        <li>
-          <a href="./404.html">About us</a>
-        </li>
-        <li>
-          <a href="./404.html">Portfolio</a>
-        </li>
-        <li>
-          <a href="./404.html">News</a>
-        </li>
-        <li class="contact-buttom">
-          <a href="./contact.html">Contact us</a>
-        </li>
-      </ul>
-    </nav>
+  <header>
+    <div class="header-content">
+      <h2 class="logo">
+        <a href="./index.html">LOGO</a>
+      </h2>
+
+      <nav class="navbar">
+        <ul id="navbar-list">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./404.html">About us</a>
+          </li>
+          <li>
+            <a href="./404.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="./404.html">News</a>
+          </li>
+          <li class="contact-buttom">
+            <a href="./contact.html">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="menu-button" id="menu-button">
+        <img src="../public/images/menu.svg" alt="menu">
+      </button>
+    </div>
   </header>
 
   <main>
@@ -39,56 +47,58 @@
       <div class="confirmation-message-image"></div>
     </div>
 
-    <section class="principal-section">
-      <div class="principal-title-wrap">
-        <p>
-          <span>
-            <a href="../pages/index.html">Home</a>
-            >
-          </span>
-          <span>
-            <a class="active-page" href="../pages/contact.html">Contact us</a>
-          </span>
-        </p>
-        <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
-        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
-      </div>
+    <div class="content-wrap">
+      <section class="principal-section">
+        <div class="principal-title-wrap">
+          <p>
+            <span>
+              <a href="../pages/index.html">Home</a>
+              >
+            </span>
+            <span>
+              <a class="active-page" href="../pages/contact.html">Contact us</a>
+            </span>
+          </p>
+          <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
+          <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+        </div>
 
-      <div class="world-map-image-wrap">
-        <img src="../public/images/map.png" alt="world-map">
-      </div>
+        <div class="world-map-image-wrap">
+          <img src="../public/images/map.png" alt="world-map">
+        </div>
 
-      <div class="ways-contact-us-wrap">
-        <div>
-          <p>Follow us</p>
-          <div class="social-midia-wrap">
-            <a href="../pages/404.html">
-              <img src="../public/images/white-facebook.svg" alt="facebook">
-            </a>
-            <a href="../pages/404.html">
-              <img src="../public/images/white-instagram.svg" alt="instagram">
-            </a>
-            <a href="../pages/404.html">
-              <img src="../public/images/white-twitter.svg" alt="twitter">
-            </a>
-            <a href="../pages/404.html">
-              <img src="../public/images/white-linkedin.svg" alt="linkedin">
-            </a>
+        <div class="ways-contact-us-wrap">
+          <div>
+            <p>Follow us</p>
+            <div class="social-midia-wrap">
+              <a href="../pages/404.html">
+                <img src="../public/images/white-facebook.svg" alt="facebook">
+              </a>
+              <a href="../pages/404.html">
+                <img src="../public/images/white-instagram.svg" alt="instagram">
+              </a>
+              <a href="../pages/404.html">
+                <img src="../public/images/white-twitter.svg" alt="twitter">
+              </a>
+              <a href="../pages/404.html">
+                <img src="../public/images/white-linkedin.svg" alt="linkedin">
+              </a>
+            </div>
+          </div>
+
+          <div class="phone-number-wrap">
+            <img src="../public/images/phone.svg" alt="phone">
+            <span>+94 4444 5555 6</span>
+          </div>
+
+          <div class="localization-wrap">
+            <img src="../public/images/gps.svg" alt="gps">
+            <span>but also the leap into electronic
+              typesetting</span>
           </div>
         </div>
-
-        <div class="phone-number-wrap">
-          <img src="../public/images/phone.svg" alt="phone">
-          <span>+94 4444 5555 6</span>
-        </div>
-
-        <div class="localization-wrap">
-          <img src="../public/images/gps.svg" alt="gps">
-          <span>but also the leap into electronic
-            typesetting</span>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <section class="say-hello-form-section">
       <div class="say-hello-form-wrap">
@@ -123,27 +133,29 @@
       </div>
     </section>
 
-    <section class="stay-in-the-loop-section">
-      <div class="stay-in-the-loop-description-wrap">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
-
-      <div class="stay-in-the-loop-wrap">
-        <div>
-          <h3>Stay in the loop</h3>
-          <p>Subscribe to receive the latest news and updates about TDA.
-            We promise not to spam you!</p>
+    <div class="content-wrap">
+      <section class="stay-in-the-loop-section">
+        <div class="stay-in-the-loop-description-wrap">
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
 
-        <div class="form-email-wrap">
-          <form id="stay-in-the-loop-form" action="">
-            <input type="text" placeholder="Enter email address" id="stay-in-the-loop-input">
-            <button type="submit">Continue</button>
-          </form>
+        <div class="stay-in-the-loop-wrap">
+          <div>
+            <h3>Stay in the loop</h3>
+            <p>Subscribe to receive the latest news and updates about TDA.
+              We promise not to spam you!</p>
+          </div>
+
+          <div class="form-email-wrap">
+            <form id="stay-in-the-loop-form" action="">
+              <input type="text" placeholder="Enter email address" id="stay-in-the-loop-input">
+              <button type="submit">Continue</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer>
@@ -218,7 +230,8 @@
     </div>
   </footer>
 
-  <script src="../script/receiveNews.js"></script>
   <script src="../script/getIn.js"></script>
-</body>
+  <script src="../script/receiveNews.js"></script>
+  <script src="../script/navbarToggle.js"></script>
+</body> 
 </html>

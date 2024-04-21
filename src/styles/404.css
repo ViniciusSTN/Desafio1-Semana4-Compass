@@ -44,3 +44,9 @@ main {
 h1 {
   color: #fff;
 }
+
+@media (max-width: 374px) {
+  .not-found-container div h1 {
+    font-size: 26px;
+  }
+}

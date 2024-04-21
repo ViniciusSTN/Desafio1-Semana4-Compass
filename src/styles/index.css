@@ -5,6 +5,7 @@ body {
 }
 
 main {
+  margin-top: 117px;
   max-width: 1440px;
   margin-inline: auto;
   position: relative;
@@ -15,11 +16,9 @@ main {
   display: flex;
   margin-inline: auto;
   max-width: 1146px;
-  margin-top: 117px;
-  height: 600px;
 }
 
-.principal-text-wrap{
+.principal-text-wrap {
   max-width: 460px;
 }
 
@@ -66,9 +65,8 @@ h1 {
 /* imagens */
 .joystick-wrap {
   position: absolute;
-  right: 22px;
+  right: 25px;
   top: -207px;
-  margin-left: 75px;
   z-index: -1;
 }
 
@@ -87,12 +85,62 @@ h1 {
 .cry-wrap {
   position: absolute;
   right: 36%;
+  top: 0;
 }
 
 .unreal-wrap {
   position: absolute;
   right: 16%;
   top: 20px;
+}
+
+@media (max-width: 1439px) {
+  .joystick-wrap {
+    right: 60px;
+  }
+}
+
+
+@media (max-width: 1279px) {
+  .joystick-wrap {
+    display: none;
+  }
+
+  .principal-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .unity-wrap, .cry-wrap, .unreal-wrap {
+    position: static;
+  }
+
+  .principal-text-wrap {
+    max-width: 1146px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .principal-text-wrap ul {
+    margin-top: 30px;
+    gap: 50px;
+    align-items: center;
+    display: flex;
+  }
+}
+
+@media (max-width: 1023px) {
+  .principal-text-wrap ul {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 374px) {
+  .principal-text-wrap ul {
+    gap: 10px;
+  }
 }
 
 /* Trending Games Section */
@@ -111,6 +159,7 @@ h1 {
 .trending-games-wrap h3 {
   font-weight: bold;
   font-size: 31px;
+  text-align: center;
 }
 
 .trending-games-wrap span a {
@@ -158,6 +207,13 @@ h1 {
 
 .game-image-wrap img:hover, .project-list img:hover {
   transform: scale(1.05);
+}
+
+@media (max-width: 666px) {
+  .trending-games-wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 /* Spider Man Section */
@@ -211,6 +267,25 @@ h1 {
   z-index: -1;
 }
 
+@media (max-width: 1023px) {
+  .game-list {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 666px) {
+  .game-list {
+    justify-content: center;
+  }
+
+  .spider-man-image::before {
+    width: 100px;
+    height: 127px;
+    top: -40px;
+    right: 100px;
+  }
+}
+
 /* Secondary section (black) */
 .secondary-section-bg {
   margin-top: 157px;
@@ -221,13 +296,12 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.overlay {
+.secondary-section-overlay {
   background-color: #000000dc;
 }
 
 .secondary-section {
-  padding-top: 93px;
-  padding-bottom: 91px;
+  padding: 93px 40px 91px 40px;
 }
 
 .secondary-section h2 {
@@ -317,6 +391,14 @@ h1 {
   gap: 26px;
 }
 
+.project-list li {
+  flex-shrink: 1;
+}
+
+.project-list li img {
+  width: 100%;
+}
+
 .see-all-wrap {
   margin-top: 72px;
   display: flex;
@@ -337,4 +419,10 @@ h1 {
 
 .see-all-button:hover {
   background-color: rgba(255, 255, 255, 0.151);
+}
+
+@media (max-width: 374px) {
+  .see-all-wrap {
+    margin-top: 40px;
+  }
 }

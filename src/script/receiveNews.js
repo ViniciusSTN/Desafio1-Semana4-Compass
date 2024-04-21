@@ -5,6 +5,7 @@ const toast = document.querySelector('.confirmation-message-toast');
 
 loopEmailForm.addEventListener('submit', (event) => {
   event.preventDefault();
+
   const emailValue = loopEmailInput.value;
 
   if (emailValidate(emailValue)) {
@@ -55,6 +56,8 @@ function addNewEmailLocalStorage(email) {
   return false;
 }
 
+let timeout;
+
 function sendToastMessage(message, info) {
   if (typeof message !== "string") return;
 
@@ -77,7 +80,9 @@ function sendToastMessage(message, info) {
 
   toast.classList.add('confirmation-message-toast-active');
 
-  setTimeout(() => {
+  clearInterval(timeout);
+
+  timeout = setTimeout(() => {
     toast.classList.remove('confirmation-message-toast-active');
   }, 3000);
 }

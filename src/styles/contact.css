@@ -107,6 +107,22 @@ body {
   font-size: 20px;
 }
 
+@media (max-width: 1052px) {
+  .phone-number-wrap {
+    width: auto;
+  }
+
+  .phone-number-wrap::after, .phone-number-wrap::before {
+    display: none;
+  }
+
+  .ways-contact-us-wrap {
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
+
 /* campo 3 do ways-contact-us-wraps */
 .localization-wrap {
   display: flex;
@@ -126,7 +142,7 @@ body {
   max-width: 1440px;
   margin-inline: auto;
   margin-top: 147px;
-  padding-top: 64px;
+  padding: 64px 40px 0 40px;
   padding-bottom: 63px;
   background-color: #1C140F;
   position: relative;
