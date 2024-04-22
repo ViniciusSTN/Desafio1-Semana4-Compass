@@ -11,7 +11,7 @@ getInForm.addEventListener('submit', (event) => {
 
   nameValidate(firstNameInput, errors);
   nameValidate(lastNameInput, errors);
-  emailValidate(emailInput, errors);
+  fieldEmailValidate(emailInput, errors);
   textAreaValidate(textAreaInput, errors);
 
   if (errors.length === 0) {
@@ -47,8 +47,10 @@ function nameValidate(input, errors) {
   if (/\d/.test(input.value)) errors.push({ input: input.id, error: 'Field has numbers' });
 }
 
-function emailValidate(input, errors) {
-  if (input.value.length === 0) errors.push({ input: input.id, error: 'Field is empty' });
+function fieldEmailValidate(input, errors) {
+  if (input.value.trim().length === 0) {
+    errors.push({ input: input.id, error: 'Field is empty' });
+  }
 
   const email = input.value.toLowerCase();
 
